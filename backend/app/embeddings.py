@@ -1,8 +1,9 @@
 from sentence_transformers import SentenceTransformer
 from PIL import Image
+from .config import IMAGE_MODEL, TEXT_MODEL
 
-text_model = SentenceTransformer("BAAI/bge-m3")          # 1024-dim
-image_model = SentenceTransformer("clip-ViT-B-32")       # 512-dim, text + images
+text_model = SentenceTransformer(TEXT_MODEL)             # 1024-dim
+image_model = SentenceTransformer(IMAGE_MODEL)           # 512-dim, text + images
 
 def embed_text(texts: list[str]):
     return text_model.encode(texts, normalize_embeddings=True)

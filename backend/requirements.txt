@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+qdrant-client
+sentence-transformers
+pypdf
+pillow
+langchain
+langchain-ollama
+langgraph

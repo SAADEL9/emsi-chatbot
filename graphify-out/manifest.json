@@ -6,52 +6,46 @@
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "backend/app/agent.py": {
-    "mtime": 1794764393.8547306,
-    "seen": 1794768979.7099683,
-    "ast_hash": "ef0458147a38692db0c871f5b97a83d5",
-    "semantic_hash": "ef0458147a38692db0c871f5b97a83d5"
+    "mtime": 1794769510.615852,
+    "seen": 1794769886.0205462,
+    "ast_hash": "315e8150510269d3c4d27012501353fe",
+    "semantic_hash": ""
   },
   "backend/app/config.py": {
-    "mtime": 1794761973.1646733,
-    "seen": 1794768979.7099743,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    "mtime": 1794769491.8378518,
+    "seen": 1794769886.0205593,
+    "ast_hash": "3cdff432f15cc134c01dfec2d2662cbc",
+    "semantic_hash": ""
   },
   "backend/app/embeddings.py": {
-    "mtime": 1794762044.6566749,
-    "seen": 1794768979.7099793,
-    "ast_hash": "d9ff8c0848fb5dce3f46dad1a377e24c",
-    "semantic_hash": "d9ff8c0848fb5dce3f46dad1a377e24c"
+    "mtime": 1794769510.615852,
+    "seen": 1794769886.0205646,
+    "ast_hash": "c840e6340a590ac4f98ab25723ec9b45",
+    "semantic_hash": ""
   },
   "backend/app/ingestion.py": {
-    "mtime": 1794762141.5705454,
-    "seen": 1794768979.7099843,
-    "ast_hash": "af6f83a3828bfc88a452ebb461126306",
-    "semantic_hash": "af6f83a3828bfc88a452ebb461126306"
+    "mtime": 1794769510.590852,
+    "seen": 1794769886.0205696,
+    "ast_hash": "eac6685fb9f7ae97a50f274d90baccbb",
+    "semantic_hash": ""
   },
   "backend/app/main.py": {
-    "mtime": 1794764507.0547333,
-    "seen": 1794768979.709989,
-    "ast_hash": "ef358fef3dd4638337b9e1c2b478e3d0",
-    "semantic_hash": "ef358fef3dd4638337b9e1c2b478e3d0"
-  },
-  "backend/app/rag.py": {
-    "mtime": 1794762559.1306872,
-    "seen": 1794768979.7099938,
-    "ast_hash": "02c82e4d62a6b638fe2da4dd1190abbf",
-    "semantic_hash": "02c82e4d62a6b638fe2da4dd1190abbf"
+    "mtime": 1794769510.615852,
+    "seen": 1794769886.020573,
+    "ast_hash": "455631664ffd4841f45f806aa5ee443d",
+    "semantic_hash": ""
   },
   "backend/app/schemas.py": {
-    "mtime": 1794761973.1656733,
-    "seen": 1794768979.7099984,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    "mtime": 1794769491.8448517,
+    "seen": 1794769886.020578,
+    "ast_hash": "36d1512e089a615d91bdd9cb5fc476fd",
+    "semantic_hash": ""
   },
   "backend/app/vectordb.py": {
-    "mtime": 1794767389.1478019,
-    "seen": 1794768979.710003,
-    "ast_hash": "bfa16712f152667bef4865c95a549e5d",
-    "semantic_hash": "bfa16712f152667bef4865c95a549e5d"
+    "mtime": 1794769510.5918522,
+    "seen": 1794769886.0205808,
+    "ast_hash": "4bca2e3a08666759443abddb12150fa7",
+    "semantic_hash": ""
   },
   "mobile/android/app/build.gradle.kts": {
     "mtime": 1794760832.9996462,
@@ -252,10 +246,10 @@
     "semantic_hash": "5a4cf051798d7e6931ee0405a4523c8f"
   },
   "README.md": {
-    "mtime": 1794761356.3046587,
-    "seen": 1794768979.7101889,
-    "ast_hash": "9297e294ea1152058cf937a189eb7fa4",
-    "semantic_hash": "9297e294ea1152058cf937a189eb7fa4"
+    "mtime": 1794769533.3348527,
+    "seen": 1794769886.0207348,
+    "ast_hash": "b4f2f5f0c62100a4c8c381a19156fe23",
+    "semantic_hash": ""
   },
   "mobile/README.md": {
     "mtime": 1794760833.0626462,
@@ -543,6 +537,30 @@
     "mtime": 1794760833.0451114,
     "seen": 1794768069.4920058,
     "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": ""
+  },
+  "backend/app/chunking.py": {
+    "mtime": 1794769491.8188517,
+    "seen": 1794769886.020554,
+    "ast_hash": "3f4c160477966f2734b4afe876663bd5",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_chunking.py": {
+    "mtime": 1794769524.1748524,
+    "seen": 1794769886.0205855,
+    "ast_hash": "177b9a6019a426365a1923e8f4d1e3fc",
+    "semantic_hash": ""
+  },
+  "backend/requirements.txt": {
+    "mtime": 1794769491.8188517,
+    "seen": 1794769886.0207388,
+    "ast_hash": "5bef174bdc7432e87bd6a480e42809a4",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1794769491.8188517,
+    "seen": 1794769886.020743,
+    "ast_hash": "547e7077f6492ab221e081459313188b",
     "semantic_hash": ""
   }
 }

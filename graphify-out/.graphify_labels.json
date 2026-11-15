@@ -1,1 +1,20 @@
-{"0": "Windows Runner Window Plumbing", "1": "Backend RAG Pipeline", "2": "Linux GTK Runner", "3": "RAG Concepts and Project Docs", "4": "macOS/iOS Cocoa Shell", "5": "Windows App Entry and Utils", "6": "Windows Flutter Embedding", "7": "Flutter Counter Scaffold", "8": "iOS App Lifecycle", "9": "FastAPI Chat API", "10": "Web PWA Manifest", "11": "Flutter Project Config", "12": "Android Activity Shell", "13": "iOS Bridging Header", "14": "Backend Settings", "15": "Backend Package Init", "16": "API Schemas", "17": "Android App Gradle", "18": "Android Root Gradle", "19": "Android Settings Gradle"}
+{
+  "0": "Windows Runner Window Plumbing",
+  "1": "agent.py",
+  "2": "my_application.cc",
+  "3": "Agentic Multimodal RAG",
+  "4": "AppDelegate",
+  "5": "Windows App Entry and Utils",
+  "6": "Windows Flutter Embedding",
+  "7": "Flutter Counter Scaffold",
+  "8": "README.md",
+  "9": "main.py",
+  "10": "Web PWA Manifest",
+  "11": "Flutter SDK Dependency",
+  "12": "FlutterActivity",
+  "13": "iOS Bridging Header",
+  "15": "__init__.py",
+  "17": "app/build.gradle.kts",
+  "18": "android/build.gradle.kts",
+  "19": "settings.gradle.kts"
+}

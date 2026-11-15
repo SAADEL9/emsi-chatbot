@@ -293,6 +293,8 @@ Send a message to the agent.
 | `message` | string | The user's question |
 | `session_id` | string | Identifies the conversation, used by the agent's memory |
 
+> `session_id` is not authenticated: anyone who knows an id shares that conversation's memory, and memory is process-local, so it resets when the server restarts. Lab demo only.
+
 **Example with curl**
 ```bash
 curl -X POST http://localhost:8000/chat \
