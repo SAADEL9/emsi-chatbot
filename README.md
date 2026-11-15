@@ -302,6 +302,25 @@ curl -X POST http://localhost:8000/chat \
   -d '{"message": "Explain RAG", "session_id": "test"}'
 ```
 
+### `POST /upload`
+
+Index a PDF or image so the agent can search it in later questions. Re-uploading the
+same name never overwrites the existing file; it is stored with a `-1`, `-2`… suffix.
+
+`multipart/form-data` with one field, `file` (PDF, PNG or JPG, max 20 MB).
+
+```bash
+curl -X POST http://localhost:8000/upload -F "file=@notes.pdf"
+```
+
+**Response**
+```json
+{ "indexed": "notes.pdf" }
+```
+
+Errors: `400` unsupported type, `413` too large, `422` PDF with no extractable text
+(scanned pages), `503` Qdrant or the embedding model is down.
+
 ### Static files
 
 Images are served from `/images/<filename>`.
