@@ -1,0 +1,25 @@
+cat > .gitignore << 'EOF'
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Vector DB data
+qdrant_data/
+
+# Model caches
+.cache/
+models/
+
+# Flutter / Dart
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins*
+mobile/.pub-cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+EOF
