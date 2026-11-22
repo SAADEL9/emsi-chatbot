@@ -46,16 +46,17 @@ The project goes beyond classic RAG in two ways:
 | Feature | Description | Status |
 |---|---|---|
 | Chat interface | Flutter mobile app with a conversational UI | Core |
+| Supabase auth | Email sign-up / sign-in; chat is keyed per user | Core |
 | Semantic text search | Finds passages by meaning using BGE-M3 embeddings | Core |
 | Image search | Finds images from a text query using CLIP | Core |
 | Hybrid result fusion | Combines text and image rankings with **RRF** | Core |
 | Source citations | Answers reference the file and page used | Core |
-| Local LLM | Runs through Ollama, so data stays on your machine | Core |
+| LLM | OpenRouter by default, optional local Ollama fallback | Core |
 | Agentic reasoning | ReAct agent chooses tools step by step (LangGraph) | Core |
 | Conversation memory | The agent remembers earlier messages in a session | Core |
 | MCP tools | Extend the agent with external tools via the Model Context Protocol | Core |
-| Document ingestion | Chunking, embedding, and indexing of PDFs and images | Core |
-| Image questions (VLM) | Send an image from the phone and ask about it | Planned |
+| Document ingestion | Text and embedded images from PDFs, plus standalone images, are indexed | Core |
+| Image understanding (VLM) | Uploaded images and images inside PDFs are captioned and indexed for chat | Core |
 | Audio input | Voice questions transcribed with Whisper | Planned |
 | Table understanding | Extract and index tables from documents | Planned |
 | Streaming answers | Typing effect via Server-Sent Events | Planned |
@@ -138,7 +139,7 @@ score(d) = Σ 1 / (k + rank_i(d))      with k = 60
                                     ▼          ▼
                             ┌────────────┐  ┌──────────────┐
                             │ Vector DB  │  │ LLM / VLM    │
-                            │ (Qdrant)   │  │ (Ollama)     │
+                            │ (Qdrant)   │  │ (OpenRouter) │
                             └────────────┘  └──────────────┘
 ```
 
@@ -152,12 +153,13 @@ score(d) = Σ 1 / (k + rank_i(d))      with k = 60
 
 | Layer | Technology |
 |---|---|
-| Mobile app | Flutter, Dart, `http` |
+| Mobile app | Flutter, Dart, `http`, Supabase Auth |
 | API | Python 3.10+, FastAPI, Uvicorn |
 | Text embeddings | BGE-M3 |
 | Image embeddings | CLIP (ViT-B-32) via `sentence-transformers` |
 | Vector database | Qdrant |
-| LLM / VLM | Ollama (`llama3.2`, `llama3.2-vision`) |
+| LLM | OpenRouter (default), Groq, xAI Grok, or local Ollama, switchable via `LLM_PROVIDER` |
+| VLM | OpenRouter, Groq (`qwen/qwen3.8-27b`), or xAI Grok, whichever `LLM_PROVIDER` selects |
 | Agent framework | LangChain, LangGraph, `langchain-mcp-adapters` |
 | Parsing | `pypdf`, `pdfplumber`, Pillow |
 | Packaging | Docker, Docker Compose |
@@ -183,7 +185,8 @@ emsi-chatbot/
 │   └── lib/
 │       ├── main.dart
 │       ├── services/api_service.dart
-│       └── screens/chat_screen.dart
+│       ├── services/auth_service.dart
+│       └── screens/
 ├── docker-compose.yml
 └── README.md
 ```
@@ -197,7 +200,7 @@ emsi-chatbot/
 - Python 3.10+ and `python3-venv`
 - Flutter SDK
 - Docker
-- [Ollama](https://ollama.com)
+- [OpenRouter](https://openrouter.ai) API key
 
 ### 1. Clone the repository
 
@@ -216,12 +219,63 @@ docker run -d -p 6333:6333 -p 6334:6334 \
 
 Dashboard: http://localhost:6333/dashboard
 
-### 3. Pull the Ollama models
+### 3. Configure OpenRouter
+
+Create an API key at https://openrouter.ai/keys and put it in `backend/.env`:
+
+```bash
+cp backend/.env.example backend/.env
+# edit backend/.env and set OPENROUTER_API_KEY=sk-or-v1-...
+```
+
+The default model is the free `nvidia/nemotron-3.5-lightning:free`; set `OPENROUTER_MODEL`
+in `.env` to use any other [tool-calling model](https://openrouter.ai/models).
+Image uploads are captioned by `nvidia/nemotron-3.5-super-vl:free`; override it with
+`OPENROUTER_VLM_MODEL` using any [image-capable model](https://openrouter.ai/models).
+Free models are rate-limited (about 20 requests/min and roughly 50 requests/day
+without credits, shared by both models) and may be used for training by their
+providers; pick a paid model if that matters. Captioning a large PDF uses one
+vision request per image, so it can exhaust the free daily quota by itself.
+
+To use Groq, add keys from https://console.groq.com/keys. It handles chat with
+`openai/gpt-oss-120b` and image captions with `qwen/qwen3.8-27b`:
+
+```bash
+# backend/.env
+LLM_PROVIDER=groq
+GROQ_API_KEY=gsk_...
+GROQ_API_KEY_2=gsk_...        # optional second key, tried next
+OPENROUTER_API_KEY=sk-or-...  # last resort when both Groq keys fail
+# GROQ_MODEL=openai/gpt-oss-120b
+# GROQ_VLM_MODEL=qwen/qwen3.8-27b
+```
+
+When a key is rate-limited or rejected, chat and captioning try the next one.
+If every key fails, `/chat` returns 503 with "The LLM is not working right now".
+Keys in the same Groq organization share the free-tier quota.
+
+To use xAI Grok instead, add an API key from https://console.x.ai and set the
+provider. Grok handles both chat and image captions:
+
+```bash
+# backend/.env
+LLM_PROVIDER=grok
+XAI_API_KEY=xai-...
+# GROK_MODEL=grok-4.7
+```
+
+If the free quota runs out, you can answer with a local Ollama model instead.
+Install [Ollama](https://ollama.com), pull the model once, and set the provider
+in `backend/.env`:
 
 ```bash
 ollama pull llama3.2
-ollama pull llama3.2-vision   # optional, for image questions
+# backend/.env
+LLM_PROVIDER=ollama
 ```
+
+Switch back with `LLM_PROVIDER=openrouter` when the quota resets. The VLM still
+uses OpenRouter, so image captions need the OpenRouter quota.
 
 ### 4. Set up the back-end
 
@@ -252,18 +306,44 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 Interactive docs: http://localhost:8000/docs
 
-### 7. Run the mobile app
+### 7. Set up Supabase Auth
+
+1. Create a project at [supabase.com](https://supabase.com).
+2. In **Authentication → Providers**, keep Email enabled. For local testing you can turn off **Confirm email**.
+3. Copy the project URL and anon key from **Project Settings → API**.
+4. Copy the JWT secret from the same page into `backend/.env` so the API can verify sessions:
+
+```bash
+# backend/.env
+SUPABASE_JWT_SECRET=your-jwt-secret
+```
+
+5. Put the public keys in `mobile/supabase.json` (gitignored):
+
+```bash
+cp mobile/supabase.json.example mobile/supabase.json
+# edit URL and anon key
+```
+
+### 8. Run the mobile app
 
 ```bash
 cd mobile
 flutter pub get
-flutter run
+flutter run --dart-define-from-file=supabase.json
 ```
 
-In `lib/services/api_service.dart`, set `baseUrl` to:
+Without that file the app still opens, but sign-in is disabled until the keys are set.
 
-- `http://10.0.2.2:8000` for the Android emulator
-- `http://<your-PC-LAN-IP>:8000` for a physical phone on the same Wi-Fi
+The app picks the API host automatically:
+
+- Android emulator: `http://10.0.2.2:8000`
+- Chrome/web, desktop, iOS simulator: `http://localhost:8000`
+- Physical phone: pass your PC's LAN IP:
+
+```bash
+flutter run --dart-define-from-file=supabase.json --dart-define=API_URL=http://<your-PC-LAN-IP>:8000
+```
 
 ---
 
@@ -284,7 +364,8 @@ Send a message to the agent.
 **Response**
 ```json
 {
-  "answer": "Cosine similarity measures the angle between two vectors..."
+  "answer": "Cosine similarity measures the angle between two vectors...",
+  "images": ["/images/Brochure-EMSI-p1-0.jpg"]
 }
 ```
 
@@ -292,8 +373,9 @@ Send a message to the agent.
 |---|---|---|
 | `message` | string | The user's question |
 | `session_id` | string | Identifies the conversation, used by the agent's memory |
+| `images` | string[] | Image URLs found by the agent; the app renders them under the answer |
 
-> `session_id` is not authenticated: anyone who knows an id shares that conversation's memory, and memory is process-local, so it resets when the server restarts. Lab demo only.
+> When `SUPABASE_JWT_SECRET` is set, send `Authorization: Bearer <access_token>`. The server ignores `session_id` and uses the token's user id. Without the secret, `session_id` is still unauthenticated (lab demo): anyone who knows an id shares that conversation's memory, and memory is process-local, so it resets when the server restarts.
 
 **Example with curl**
 ```bash
@@ -307,7 +389,7 @@ curl -X POST http://localhost:8000/chat \
 Index a PDF or image so the agent can search it in later questions. Re-uploading the
 same name never overwrites the existing file; it is stored with a `-1`, `-2`… suffix.
 
-`multipart/form-data` with one field, `file` (PDF, PNG or JPG, max 20 MB).
+`multipart/form-data` with one field, `file` (PDF, PNG or JPG, max 30 MB).
 
 ```bash
 curl -X POST http://localhost:8000/upload -F "file=@notes.pdf"
@@ -318,8 +400,8 @@ curl -X POST http://localhost:8000/upload -F "file=@notes.pdf"
 { "indexed": "notes.pdf" }
 ```
 
-Errors: `400` unsupported type, `413` too large, `422` PDF with no extractable text
-(scanned pages), `503` Qdrant or the embedding model is down.
+Errors: `400` unsupported type, `413` too large, `422` PDF with no extractable
+text or images, `503` Qdrant or the embedding model is down.
 
 ### Static files
 
@@ -334,6 +416,7 @@ Example questions to try once your data is indexed:
 - "Summarize chapter 2 of the course."
 - "What is the difference between classic RAG and agentic RAG?"
 - "Show me images related to neural network architectures."
+- Upload a diagram or photo with **+**, then ask "What does this image show?"
 - Follow-up questions such as "Can you explain that more simply?" (the agent uses memory)
 
 Behavior to expect:
@@ -341,6 +424,7 @@ Behavior to expect:
 - The agent decides whether to search documents, search images, or both.
 - If nothing relevant is found, it says it doesn't know rather than inventing an answer.
 - Answers cite the source file and page.
+- Images found by the agent are returned in `images` and shown under the answer.
 
 ---
 
@@ -350,11 +434,12 @@ Behavior to expect:
 - [x] Classic multimodal RAG with RRF
 - [x] Flutter chat UI
 - [x] Agentic RAG with LangGraph, memory, and MCP
-- [ ] Image upload and VLM question answering
+- [x] Image upload and VLM captioning
+- [x] Embedded PDF images extracted, captioned, and shown in chat
 - [ ] Audio input with Whisper
 - [ ] Table extraction and indexing
 - [ ] Streaming responses
-- [ ] Authentication and per-user data
+- [x] Authentication and per-user data (Supabase)
 - [ ] Evaluation suite for retrieval and answer quality
 - [ ] Docker Compose deployment and release APK
 
@@ -367,9 +452,11 @@ Behavior to expect:
 | `externally-managed-environment` on `pip install` | Use a virtual environment: `python3 -m venv .venv && source .venv/bin/activate` |
 | App can't reach the API | Use `10.0.2.2` on the Android emulator, or your PC's LAN IP on a real device |
 | Plain HTTP blocked on Android | Add `android:usesCleartextTraffic="true"` in `AndroidManifest.xml` for development |
-| Agent never calls tools | Use an Ollama model that supports tool calling (`llama3.2`, `qwen2.5`) |
+| Agent never calls tools | Use an OpenRouter model that supports tool calling (e.g. `nvidia/nemotron-3.5-lightning:free`) |
+| `429` from a provider | Rate limit reached; wait for the reset, add credits, or switch `LLM_PROVIDER` to `groq`, `grok`, or `ollama` in `backend/.env` |
+| `401` / `No auth credentials` from OpenRouter | Set `OPENROUTER_API_KEY` in `backend/.env` and restart the API |
+| Slow first answer | The local embedding models load on first call; later answers are faster |
 | Irrelevant search results | Make sure indexing and querying use the same embedding model; tune chunk size and `top_k` |
-| Slow first answer | The model loads on first call; warm it up at server start |
 | Hallucinated answers | Keep the "answer only from context" system prompt and a low temperature |
 | Large install size | Install CPU-only PyTorch before the other dependencies |
 

@@ -6,5 +6,8 @@ sentence-transformers
 pypdf
 pillow
 langchain
+langchain-openai
 langchain-ollama
 langgraph
+python-dotenv
+PyJWT

@@ -1,17 +1,30 @@
-# mobile
+# EMSI Chatbot mobile app
 
-A new Flutter project.
+## Supabase setup
 
-## Getting Started
+1. Create a Supabase project and enable **Email** under **Authentication → Providers**.
+2. Copy the project URL and anon/publishable key from **Project Settings → API**.
+3. Create `supabase.json` from the example and enter those public client values:
 
-This project is a starting point for a Flutter application.
+   ```sh
+   cp supabase.json.example supabase.json
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+   This local file is ignored by Git. Never put a Supabase service-role key in the app.
+4. In **Authentication → URL Configuration**, set the Site URL to the destination where recovery links should open. For local development, Supabase email confirmation can be disabled; otherwise users must confirm their address before signing in.
+5. Start the backend with `SUPABASE_JWT_SECRET` set in `backend/.env` if API requests should require a valid Supabase session.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+flutter pub get
+flutter run --dart-define-from-file=supabase.json
+```
+
+For a physical phone, pass the computer's LAN address as the API URL:
+
+```sh
+flutter run --dart-define-from-file=supabase.json --dart-define=API_URL=http://<computer-lan-ip>:8000
+```
+
+Without Supabase values the app starts in an unconfigured state and disables authentication.

@@ -1,0 +1,1274 @@
+{
+  "backend/app/__init__.py": {
+    "mtime": 1794761973.1646733,
+    "seen": 1794768979.709959,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "backend/app/agent.py": {
+    "mtime": 1795352087.3033292,
+    "seen": 1795352242.6033635,
+    "ast_hash": "4638986ff7bf40f75d6ca307aeeb42d3",
+    "semantic_hash": ""
+  },
+  "backend/app/config.py": {
+    "mtime": 1795352065.599742,
+    "seen": 1795352242.603376,
+    "ast_hash": "377d4224332ee24d91ffb60dc6774963",
+    "semantic_hash": ""
+  },
+  "backend/app/embeddings.py": {
+    "mtime": 1794769510.615852,
+    "seen": 1794769886.0205646,
+    "ast_hash": "c840e6340a590ac4f98ab25723ec9b45",
+    "semantic_hash": ""
+  },
+  "backend/app/ingestion.py": {
+    "mtime": 1795352105.7027428,
+    "seen": 1795352242.6033912,
+    "ast_hash": "c8515f9c45ab9b5baaa4e5b423d3c263",
+    "semantic_hash": ""
+  },
+  "backend/app/main.py": {
+    "mtime": 1795352114.4407432,
+    "seen": 1795352242.603396,
+    "ast_hash": "fd1eb8ebb3d669b72f7a5dfc64f1954d",
+    "semantic_hash": ""
+  },
+  "backend/app/schemas.py": {
+    "mtime": 1795268957.774685,
+    "seen": 1795269315.7909763,
+    "ast_hash": "b63cd549931f9486d8037798508f7b48",
+    "semantic_hash": ""
+  },
+  "backend/app/vectordb.py": {
+    "mtime": 1794769510.5918522,
+    "seen": 1794769886.0205808,
+    "ast_hash": "4bca2e3a08666759443abddb12150fa7",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/build.gradle.kts": {
+    "mtime": 1794760832.9996462,
+    "seen": 1794768979.710008,
+    "ast_hash": "4a615f0398f5b82c11769713c7edd68d",
+    "semantic_hash": "4a615f0398f5b82c11769713c7edd68d"
+  },
+  "mobile/android/app/src/main/kotlin/com/example/mobile/MainActivity.kt": {
+    "mtime": 1794760832.9966462,
+    "seen": 1794768979.7100124,
+    "ast_hash": "cbd5bd406d34e100de266cfeb3b95304",
+    "semantic_hash": "cbd5bd406d34e100de266cfeb3b95304"
+  },
+  "mobile/android/build.gradle.kts": {
+    "mtime": 1794760833.0016463,
+    "seen": 1794768979.7100172,
+    "ast_hash": "f11f360aed44d4f6871b398346af14f0",
+    "semantic_hash": "f11f360aed44d4f6871b398346af14f0"
+  },
+  "mobile/android/settings.gradle.kts": {
+    "mtime": 1794760833.0046463,
+    "seen": 1794768979.7100222,
+    "ast_hash": "67a2bc8728c5df57688a38831602605d",
+    "semantic_hash": "67a2bc8728c5df57688a38831602605d"
+  },
+  "mobile/ios/Runner/AppDelegate.swift": {
+    "mtime": 1794760833.0662372,
+    "seen": 1794768979.710027,
+    "ast_hash": "2bd8469f2a4b701ff582f6574e58b13c",
+    "semantic_hash": "2bd8469f2a4b701ff582f6574e58b13c"
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1794760833.0726461,
+    "seen": 1794768979.7100315,
+    "ast_hash": "c3cdf9688b604d14f2e76a8287e16167",
+    "semantic_hash": "c3cdf9688b604d14f2e76a8287e16167"
+  },
+  "mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json": {
+    "mtime": 1794760833.0847607,
+    "seen": 1794768979.7100363,
+    "ast_hash": "770f4f65e02ca2fc57f46f4f4148d15d",
+    "semantic_hash": "770f4f65e02ca2fc57f46f4f4148d15d"
+  },
+  "mobile/ios/Runner/Runner-Bridging-Header.h": {
+    "mtime": 1794760833.0677836,
+    "seen": 1794768979.7100408,
+    "ast_hash": "e07862ac930ed4d8479185d52c6cc66d",
+    "semantic_hash": "e07862ac930ed4d8479185d52c6cc66d"
+  },
+  "mobile/ios/Runner/SceneDelegate.swift": {
+    "mtime": 1794760833.066895,
+    "seen": 1794768979.7100453,
+    "ast_hash": "748d701e783e68faf618c00464257a19",
+    "semantic_hash": "748d701e783e68faf618c00464257a19"
+  },
+  "mobile/ios/RunnerTests/RunnerTests.swift": {
+    "mtime": 1794760833.1066463,
+    "seen": 1794768979.71005,
+    "ast_hash": "a225a382d14d7b16b6f602a5c1d49331",
+    "semantic_hash": "a225a382d14d7b16b6f602a5c1d49331"
+  },
+  "mobile/lib/main.dart": {
+    "mtime": 1794775138.3196166,
+    "seen": 1795269315.7910707,
+    "ast_hash": "cda69cc977a91cb5bdfe68eb33aba1b2",
+    "semantic_hash": ""
+  },
+  "mobile/linux/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1794760834.2688112,
+    "seen": 1794768979.7100594,
+    "ast_hash": "d07afe003d5837167bdd357d593f20a0",
+    "semantic_hash": "d07afe003d5837167bdd357d593f20a0"
+  },
+  "mobile/linux/flutter/generated_plugin_registrant.h": {
+    "mtime": 1794760834.2676945,
+    "seen": 1794768979.7100642,
+    "ast_hash": "d295462c9da9f7fef22dc86c34492318",
+    "semantic_hash": "d295462c9da9f7fef22dc86c34492318"
+  },
+  "mobile/linux/runner/main.cc": {
+    "mtime": 1794760833.0601692,
+    "seen": 1794768979.7100687,
+    "ast_hash": "0643b8609698e96b3abd63c210361a87",
+    "semantic_hash": "0643b8609698e96b3abd63c210361a87"
+  },
+  "mobile/linux/runner/my_application.cc": {
+    "mtime": 1794760833.0593863,
+    "seen": 1794768979.7100737,
+    "ast_hash": "4ff0e5a44cd64e525cfc570c66b39d3b",
+    "semantic_hash": "4ff0e5a44cd64e525cfc570c66b39d3b"
+  },
+  "mobile/linux/runner/my_application.h": {
+    "mtime": 1794760833.0577261,
+    "seen": 1794768979.7100923,
+    "ast_hash": "326a85d68857137fdfe8698a0c071baf",
+    "semantic_hash": "326a85d68857137fdfe8698a0c071baf"
+  },
+  "mobile/macos/Flutter/GeneratedPluginRegistrant.swift": {
+    "mtime": 1794775050.8529818,
+    "seen": 1795269315.7911086,
+    "ast_hash": "0d9da5457f8b0ea957d961c8cb7f6515",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/AppDelegate.swift": {
+    "mtime": 1794760833.116612,
+    "seen": 1794768979.7101126,
+    "ast_hash": "2a7411ae3e7c6715525b94b6f8d2e80b",
+    "semantic_hash": "2a7411ae3e7c6715525b94b6f8d2e80b"
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1794760833.1246462,
+    "seen": 1794768979.7101176,
+    "ast_hash": "5bd47c3ef1d1a261037c87fb3ddb9cfd",
+    "semantic_hash": "5bd47c3ef1d1a261037c87fb3ddb9cfd"
+  },
+  "mobile/macos/Runner/MainFlutterWindow.swift": {
+    "mtime": 1794760833.1330695,
+    "seen": 1794768979.7101226,
+    "ast_hash": "4a747b1f256d62a2bbb79bd976891eb5",
+    "semantic_hash": "4a747b1f256d62a2bbb79bd976891eb5"
+  },
+  "mobile/macos/RunnerTests/RunnerTests.swift": {
+    "mtime": 1794760833.1466463,
+    "seen": 1794768979.710127,
+    "ast_hash": "97d3a20fd20a063c192e886d1822b4a8",
+    "semantic_hash": "97d3a20fd20a063c192e886d1822b4a8"
+  },
+  "mobile/test/widget_test.dart": {
+    "mtime": 1794775135.8426166,
+    "seen": 1795269315.7911298,
+    "ast_hash": "f2d05b3c18d80a1b59cdc1aba0739201",
+    "semantic_hash": ""
+  },
+  "mobile/web/manifest.json": {
+    "mtime": 1794760833.0396461,
+    "seen": 1794768979.7101367,
+    "ast_hash": "4f27430c54e1955f1ae0335e1b0ae544",
+    "semantic_hash": "4f27430c54e1955f1ae0335e1b0ae544"
+  },
+  "mobile/windows/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1794760834.2733593,
+    "seen": 1794768979.7101412,
+    "ast_hash": "a8f91348d8d9090f22ec69d597c41e1f",
+    "semantic_hash": "a8f91348d8d9090f22ec69d597c41e1f"
+  },
+  "mobile/windows/flutter/generated_plugin_registrant.h": {
+    "mtime": 1794760834.2720554,
+    "seen": 1794768979.710146,
+    "ast_hash": "0ea33875f9f8e118f9c2ded03e2e2835",
+    "semantic_hash": "0ea33875f9f8e118f9c2ded03e2e2835"
+  },
+  "mobile/windows/runner/flutter_window.cpp": {
+    "mtime": 1794760833.0238528,
+    "seen": 1794768979.7101507,
+    "ast_hash": "9b92b95a9eecce25e3e9d356688d0cb6",
+    "semantic_hash": "9b92b95a9eecce25e3e9d356688d0cb6"
+  },
+  "mobile/windows/runner/flutter_window.h": {
+    "mtime": 1794760833.0288017,
+    "seen": 1794768979.7101552,
+    "ast_hash": "79bea736711adda00c49419a39a4a0b4",
+    "semantic_hash": "79bea736711adda00c49419a39a4a0b4"
+  },
+  "mobile/windows/runner/main.cpp": {
+    "mtime": 1794760833.030646,
+    "seen": 1794768979.71016,
+    "ast_hash": "f4ae5ab555574d3c51a319489ff1aebf",
+    "semantic_hash": "f4ae5ab555574d3c51a319489ff1aebf"
+  },
+  "mobile/windows/runner/resource.h": {
+    "mtime": 1794760833.029797,
+    "seen": 1794768979.7101648,
+    "ast_hash": "c8f809a4f8d3f2f625e358fd90f72fee",
+    "semantic_hash": "c8f809a4f8d3f2f625e358fd90f72fee"
+  },
+  "mobile/windows/runner/utils.cpp": {
+    "mtime": 1794760833.0322416,
+    "seen": 1794768979.7101698,
+    "ast_hash": "e56aa0d1b2e1b995000d67e8e069b83f",
+    "semantic_hash": "e56aa0d1b2e1b995000d67e8e069b83f"
+  },
+  "mobile/windows/runner/utils.h": {
+    "mtime": 1794760833.0331097,
+    "seen": 1794768979.7101746,
+    "ast_hash": "c741fb9cddbf3a62f4688b6cca39ddcc",
+    "semantic_hash": "c741fb9cddbf3a62f4688b6cca39ddcc"
+  },
+  "mobile/windows/runner/win32_window.cpp": {
+    "mtime": 1794760833.0339453,
+    "seen": 1794768979.7101793,
+    "ast_hash": "928e86a2be27eca688669dce6c9177d9",
+    "semantic_hash": "928e86a2be27eca688669dce6c9177d9"
+  },
+  "mobile/windows/runner/win32_window.h": {
+    "mtime": 1794760833.0346713,
+    "seen": 1794768979.7101839,
+    "ast_hash": "5a4cf051798d7e6931ee0405a4523c8f",
+    "semantic_hash": "5a4cf051798d7e6931ee0405a4523c8f"
+  },
+  "README.md": {
+    "mtime": 1795352143.2797437,
+    "seen": 1795352242.603565,
+    "ast_hash": "478987016869a56caf5aabb1f04f0320",
+    "semantic_hash": ""
+  },
+  "mobile/README.md": {
+    "mtime": 1794760833.0626462,
+    "seen": 1794768979.7101936,
+    "ast_hash": "bd7995d0cc160cb9b4236e76bf96fc90",
+    "semantic_hash": "bd7995d0cc160cb9b4236e76bf96fc90"
+  },
+  "mobile/analysis_options.yaml": {
+    "mtime": 1794760833.0526462,
+    "seen": 1794768979.7101982,
+    "ast_hash": "fdfe9ebc9dd8cfb3ddb637e388266802",
+    "semantic_hash": "fdfe9ebc9dd8cfb3ddb637e388266802"
+  },
+  "mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md": {
+    "mtime": 1794760833.0855436,
+    "seen": 1794768069.4919322,
+    "ast_hash": "e175e436acacf76c814d83532d0b662c",
+    "semantic_hash": ""
+  },
+  "mobile/linux/CMakeLists.txt": {
+    "mtime": 1794760833.053646,
+    "seen": 1794768069.4919336,
+    "ast_hash": "48b103a7a00e5df621dc530e7371a09c",
+    "semantic_hash": ""
+  },
+  "mobile/linux/flutter/CMakeLists.txt": {
+    "mtime": 1794760833.0611553,
+    "seen": 1794768069.4919353,
+    "ast_hash": "46690fb8ffaf7d227d8bc4713f31140d",
+    "semantic_hash": ""
+  },
+  "mobile/linux/runner/CMakeLists.txt": {
+    "mtime": 1794760833.0569117,
+    "seen": 1794768069.4919367,
+    "ast_hash": "6d75431dc21756981b53a7494c836311",
+    "semantic_hash": ""
+  },
+  "mobile/pubspec.yaml": {
+    "mtime": 1794775048.171709,
+    "seen": 1795269315.791224,
+    "ast_hash": "14e413756982d463b60e3b2e6ace8d03",
+    "semantic_hash": ""
+  },
+  "mobile/web/index.html": {
+    "mtime": 1794760833.0486462,
+    "seen": 1794768979.7102077,
+    "ast_hash": "4399fafd2bc951a3c957b53a3c38fc23",
+    "semantic_hash": "4399fafd2bc951a3c957b53a3c38fc23"
+  },
+  "mobile/windows/CMakeLists.txt": {
+    "mtime": 1794760833.0216463,
+    "seen": 1794768069.4919415,
+    "ast_hash": "0682b9ef74fabd00211d066b0879fe24",
+    "semantic_hash": ""
+  },
+  "mobile/windows/flutter/CMakeLists.txt": {
+    "mtime": 1794760833.0388324,
+    "seen": 1794768069.491943,
+    "ast_hash": "0c500410e3259a9a053797dc1c28070e",
+    "semantic_hash": ""
+  },
+  "mobile/windows/runner/CMakeLists.txt": {
+    "mtime": 1794760833.024653,
+    "seen": 1794768069.4919446,
+    "ast_hash": "e99a99b5cc82a168fc557eb23b8d5a96",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Support Architectures Micro Srvices avec Spring cloud 2025.jpg": {
+    "mtime": 1794764115.8907242,
+    "seen": 1794768069.4919486,
+    "ast_hash": "e1ec08326f0a221c32f17a611bc447bc",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1794760833.0174398,
+    "seen": 1794768069.49195,
+    "ast_hash": "13e9c72ec37fac220397aa819fa1ef2d",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1794760833.0156462,
+    "seen": 1794768069.4919517,
+    "ast_hash": "6270344430679711b81476e29878caa7",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1794760833.0140042,
+    "seen": 1794768069.4919534,
+    "ast_hash": "a0a8db5985280b3679d99a820ae2db79",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1794760833.0180154,
+    "seen": 1794768069.4919548,
+    "ast_hash": "afe1b655b9f32da22f9a4301bb8e6ba8",
+    "semantic_hash": ""
+  },
+  "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1794760833.0153646,
+    "seen": 1794768069.4919562,
+    "ast_hash": "57838d52c318faff743130c3fcfae0c6",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png": {
+    "mtime": 1794760833.0709305,
+    "seen": 1794768069.4919577,
+    "ast_hash": "c785f8932297af4acd5f5ccb7630f01c",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png": {
+    "mtime": 1794760833.082859,
+    "seen": 1794768069.4919593,
+    "ast_hash": "a2f8558fb1d42514111fbbb19fb67314",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png": {
+    "mtime": 1794760833.0773928,
+    "seen": 1794768069.4919608,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png": {
+    "mtime": 1794760833.0776463,
+    "seen": 1794768069.4919624,
+    "ast_hash": "1b3b1538136316263c7092951e923e9d",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png": {
+    "mtime": 1794760833.0696461,
+    "seen": 1794768069.4919639,
+    "ast_hash": "be8887071dd7ec39cb754d236aa9584f",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png": {
+    "mtime": 1794760833.0806847,
+    "seen": 1794768069.4919655,
+    "ast_hash": "043119ef4faa026ff82bd03f241e5338",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png": {
+    "mtime": 1794760833.0736463,
+    "seen": 1794768069.491967,
+    "ast_hash": "2b1452c4c1bda6177b4fbbb832df217f",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png": {
+    "mtime": 1794760833.079963,
+    "seen": 1794768069.4919684,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png": {
+    "mtime": 1794760833.0786462,
+    "seen": 1794768069.49197,
+    "ast_hash": "8245359312aea1b0d2412f79a07b0ca5",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png": {
+    "mtime": 1794760833.081409,
+    "seen": 1794768069.4919715,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png": {
+    "mtime": 1794760833.0816462,
+    "seen": 1794768069.4919732,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png": {
+    "mtime": 1794760833.0746462,
+    "seen": 1794768069.4919746,
+    "ast_hash": "e419d22a37bc40ba185aca1acb6d4ac6",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png": {
+    "mtime": 1794760833.0716462,
+    "seen": 1794768069.4919763,
+    "ast_hash": "36c0d7a7132bdde18898ffdfcfcdc4d2",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png": {
+    "mtime": 1794760833.083585,
+    "seen": 1794768069.4919777,
+    "ast_hash": "643842917530acf4c5159ae851b0baf2",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png": {
+    "mtime": 1794760833.0756462,
+    "seen": 1794768069.4919796,
+    "ast_hash": "665cb5e3c5729da6d639d26eff47a503",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png": {
+    "mtime": 1794760833.0874326,
+    "seen": 1794768069.4919815,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png": {
+    "mtime": 1794760833.086556,
+    "seen": 1794768069.4919832,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png": {
+    "mtime": 1794760833.0882022,
+    "seen": 1794768069.4919848,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png": {
+    "mtime": 1794760833.126938,
+    "seen": 1794768069.4919865,
+    "ast_hash": "c9becc9105f8cabce934d20c7bfb6aac",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png": {
+    "mtime": 1794760833.122646,
+    "seen": 1794768069.491988,
+    "ast_hash": "3ded30823804caaa5ccc944067c54a36",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png": {
+    "mtime": 1794760833.129099,
+    "seen": 1794768069.4919899,
+    "ast_hash": "8bf511604bc6ed0a6aeb380c5113fdcf",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png": {
+    "mtime": 1794760833.124324,
+    "seen": 1794768069.4919915,
+    "ast_hash": "dfe2c93d1536ae02f085cc63faa3430e",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png": {
+    "mtime": 1794760833.1276462,
+    "seen": 1794768069.4919932,
+    "ast_hash": "8e0ae58e362a6636bdfccbc04da2c58c",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png": {
+    "mtime": 1794760833.1299233,
+    "seen": 1794768069.4919949,
+    "ast_hash": "0ad44039155424738917502c69667699",
+    "semantic_hash": ""
+  },
+  "mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png": {
+    "mtime": 1794760833.125646,
+    "seen": 1794768069.4919965,
+    "ast_hash": "04e7b6ef05346c70b663ca1d97de3ad5",
+    "semantic_hash": ""
+  },
+  "mobile/web/favicon.png": {
+    "mtime": 1794760833.0473747,
+    "seen": 1794768069.4919991,
+    "ast_hash": "5dcef449791fa27946b3d35ad8803796",
+    "semantic_hash": ""
+  },
+  "mobile/web/icons/Icon-192.png": {
+    "mtime": 1794760833.046306,
+    "seen": 1794768069.4920008,
+    "ast_hash": "ac9a721a12bbc803b44f645561ecb1e1",
+    "semantic_hash": ""
+  },
+  "mobile/web/icons/Icon-512.png": {
+    "mtime": 1794760833.0412602,
+    "seen": 1794768069.4920025,
+    "ast_hash": "96e752610906ba2a93c65f8abe1645f1",
+    "semantic_hash": ""
+  },
+  "mobile/web/icons/Icon-maskable-192.png": {
+    "mtime": 1794760833.0437875,
+    "seen": 1794768069.4920044,
+    "ast_hash": "c457ef57daa1d16f64b27b786ec2ea3c",
+    "semantic_hash": ""
+  },
+  "mobile/web/icons/Icon-maskable-512.png": {
+    "mtime": 1794760833.0451114,
+    "seen": 1794768069.4920058,
+    "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": ""
+  },
+  "backend/app/chunking.py": {
+    "mtime": 1794769491.8188517,
+    "seen": 1794769886.020554,
+    "ast_hash": "3f4c160477966f2734b4afe876663bd5",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_chunking.py": {
+    "mtime": 1794769524.1748524,
+    "seen": 1794769886.0205855,
+    "ast_hash": "177b9a6019a426365a1923e8f4d1e3fc",
+    "semantic_hash": ""
+  },
+  "backend/requirements.txt": {
+    "mtime": 1794909607.8527932,
+    "seen": 1795269315.7911751,
+    "ast_hash": "1548c35b9a8b866b47f39565b755c040",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1794769491.8188517,
+    "seen": 1794769886.020743,
+    "ast_hash": "547e7077f6492ab221e081459313188b",
+    "semantic_hash": ""
+  },
+  "backend/app/vlm.py": {
+    "mtime": 1795352098.6987426,
+    "seen": 1795352242.603411,
+    "ast_hash": "895f1a250c7959db1e826253bceca235",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_ingestion.py": {
+    "mtime": 1795272218.0614774,
+    "seen": 1795351049.0562882,
+    "ast_hash": "6b4f623120dd4ea2ced61b14487451d9",
+    "semantic_hash": ""
+  },
+  "mobile/lib/screens/chat_screen.dart": {
+    "mtime": 1795269007.8296816,
+    "seen": 1795269315.791075,
+    "ast_hash": "58b0e9f654a23203607010b9fd1cd66c",
+    "semantic_hash": ""
+  },
+  "mobile/lib/services/api_service.dart": {
+    "mtime": 1795268966.4236844,
+    "seen": 1795269315.7910805,
+    "ast_hash": "64cfe0a7b8fb5862875ecbdb3f8abcf9",
+    "semantic_hash": ""
+  },
+  "backend/data/Brochure-EMSI.pdf": {
+    "mtime": 1794907147.86869,
+    "seen": 1795269315.7912571,
+    "ast_hash": "8dd6d33fb5355f8fc347d87625b41db0",
+    "semantic_hash": ""
+  },
+  "backend/data/images/64626.jpg": {
+    "mtime": 1794778331.1760693,
+    "seen": 1795269315.7912605,
+    "ast_hash": "b9cc05dfd17d28bf914c8edf086f1cc6",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p1-0.jpg": {
+    "mtime": 1795351109.5767193,
+    "seen": 1795352242.603596,
+    "ast_hash": "edf77448a8d74402eb84f6068d1e9816",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p10-0.jpg": {
+    "mtime": 1795351125.1807196,
+    "seen": 1795352242.6035979,
+    "ast_hash": "eb7bb60c31159a90f12d6db534f655a7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p12-0.jpg": {
+    "mtime": 1795351125.4487197,
+    "seen": 1795352242.6035995,
+    "ast_hash": "1c94ed5acd173fb44c8f3ecd40dbb3f4",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p13-0.jpg": {
+    "mtime": 1795351125.5067196,
+    "seen": 1795352242.6036015,
+    "ast_hash": "9a9bb48a81a30bf9a7fee7360ce400d0",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p14-0.jpg": {
+    "mtime": 1795351125.6897197,
+    "seen": 1795352242.6036031,
+    "ast_hash": "ac9f47de8a678aad10afd12b772a7903",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p15-0.jpg": {
+    "mtime": 1795351125.7457197,
+    "seen": 1795352242.603605,
+    "ast_hash": "102ff2e44597ce65466207a4d15c3734",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p16-0.jpg": {
+    "mtime": 1795351125.9347196,
+    "seen": 1795352242.6036067,
+    "ast_hash": "cf5b38152e26ecf6dcc3721f2f01d622",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p17-0.jpg": {
+    "mtime": 1795351125.9837196,
+    "seen": 1795352242.6036086,
+    "ast_hash": "026383d56f2ee421273f4b36ae9c5ce2",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p18-0.jpg": {
+    "mtime": 1795351126.1542697,
+    "seen": 1795352242.60361,
+    "ast_hash": "a50e7f338b892e97e2515f3da25c6a4a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p2-0.jpg": {
+    "mtime": 1795351122.3877196,
+    "seen": 1795352242.6036122,
+    "ast_hash": "5f27a6e11b705a26f8abb081bd680cf7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p2-1.jpg": {
+    "mtime": 1795351122.6237195,
+    "seen": 1795352242.6036136,
+    "ast_hash": "d0238b088d609cac9394fc164193a48a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p2-2.jpg": {
+    "mtime": 1795351122.8787196,
+    "seen": 1795352242.6036155,
+    "ast_hash": "13f12d979a0f74dbc78e029289880aa7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p20-0.jpg": {
+    "mtime": 1795351126.3647196,
+    "seen": 1795352242.6036174,
+    "ast_hash": "87d3871a0d114bedecbe9f83a5eac021",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-0.jpg": {
+    "mtime": 1795351126.4467196,
+    "seen": 1795352242.6036193,
+    "ast_hash": "651676197ac465ab07a0671d5c0efa48",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-1.jpg": {
+    "mtime": 1795351126.455108,
+    "seen": 1795352242.603621,
+    "ast_hash": "08d2e9007c56945640fdf3001e0d727f",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-2.jpg": {
+    "mtime": 1795351126.4641612,
+    "seen": 1795352242.6036234,
+    "ast_hash": "68adddee7935d25b02a03cc6d1f82762",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-3.jpg": {
+    "mtime": 1795351126.4667196,
+    "seen": 1795352242.603625,
+    "ast_hash": "3b61ba645ad5e07b56921e4bc56c21ca",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-4.jpg": {
+    "mtime": 1795351126.4727197,
+    "seen": 1795352242.6036267,
+    "ast_hash": "fd581655ada6ebf18e1a6215bf42b3f4",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p22-5.jpg": {
+    "mtime": 1795351126.4757197,
+    "seen": 1795352242.6036289,
+    "ast_hash": "d8bdff7bd471d4bff821a7ea69e130dd",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p23-0.jpg": {
+    "mtime": 1795351126.5687196,
+    "seen": 1795352242.6036305,
+    "ast_hash": "65ee4f6fff7cb2a97b69774ef385ea31",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p23-1.jpg": {
+    "mtime": 1795351126.5749657,
+    "seen": 1795352242.6036322,
+    "ast_hash": "d5fa82149d0b5d8e00915aa4f80651da",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p24-0.jpg": {
+    "mtime": 1795351126.6587198,
+    "seen": 1795352242.6036339,
+    "ast_hash": "272653b474c278b37639c1bd1e801872",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p24-2.jpg": {
+    "mtime": 1795351126.6657197,
+    "seen": 1795352242.6036358,
+    "ast_hash": "f6cc055dfce3f904e045db0c7635d36d",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p24-3.jpg": {
+    "mtime": 1795351126.6747196,
+    "seen": 1795352242.6036375,
+    "ast_hash": "ec1854bef4b3385ea08a93ad057ebc10",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-0.jpg": {
+    "mtime": 1795351127.0967197,
+    "seen": 1795352242.6036396,
+    "ast_hash": "f24595d2886591030d679c5d42b171b8",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-1.jpg": {
+    "mtime": 1795351127.1107197,
+    "seen": 1795352242.6036413,
+    "ast_hash": "4719a7588990ce68f8acc09620b279e1",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-11.jpg": {
+    "mtime": 1795351127.1217196,
+    "seen": 1795352242.6036432,
+    "ast_hash": "be7cd54a69647a1ac41a245fbe946ac2",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-13.jpg": {
+    "mtime": 1795351127.1251478,
+    "seen": 1795352242.6036453,
+    "ast_hash": "ee137cba1d8fa82fda121632d956c6cb",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-17.jpg": {
+    "mtime": 1795351127.1464868,
+    "seen": 1795352242.6036472,
+    "ast_hash": "bebdf02c269a2e79298687bb11e591e3",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-18.jpg": {
+    "mtime": 1795351127.1483374,
+    "seen": 1795352242.6036487,
+    "ast_hash": "0bb41f9cead88459daaac57b80cc4fd9",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-19.jpg": {
+    "mtime": 1795351127.1487198,
+    "seen": 1795352242.6036506,
+    "ast_hash": "52ce07b881cdfe380d454712c963e084",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-22.jpg": {
+    "mtime": 1795351127.1627197,
+    "seen": 1795352242.6036522,
+    "ast_hash": "485c955d956a189cbd35da7ff28cc51c",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-26.jpg": {
+    "mtime": 1795351127.1917198,
+    "seen": 1795352242.6036544,
+    "ast_hash": "0acacb10c8dc87f25e05ab2dedbc0269",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-28.jpg": {
+    "mtime": 1795351127.1944416,
+    "seen": 1795352242.6036563,
+    "ast_hash": "d374dcbd7a99473b6b324c2e7a3cc983",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-29.jpg": {
+    "mtime": 1795351127.1959422,
+    "seen": 1795352242.6036577,
+    "ast_hash": "ab432abc83b67404fc98867a9a758703",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-3.jpg": {
+    "mtime": 1795351127.113826,
+    "seen": 1795352242.6036599,
+    "ast_hash": "cb49fb3ec6ad54eb84dd51153119f74a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-30.jpg": {
+    "mtime": 1795351127.1974874,
+    "seen": 1795352242.6036613,
+    "ast_hash": "0dd6ffe574163df5fa6eee79a5f74de6",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-32.jpg": {
+    "mtime": 1795351127.2162492,
+    "seen": 1795352242.6036632,
+    "ast_hash": "ad0d32ecf01747d8207530540cff2060",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-36.jpg": {
+    "mtime": 1795351127.2417197,
+    "seen": 1795352242.6036646,
+    "ast_hash": "27fbd10c0ab824370e5cfea452634be9",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-4.jpg": {
+    "mtime": 1795351127.1149826,
+    "seen": 1795352242.6036668,
+    "ast_hash": "5618a79f324ca42c5e7be12de4b245cd",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-8.jpg": {
+    "mtime": 1795351127.1177197,
+    "seen": 1795352242.6036685,
+    "ast_hash": "e5598bd236bff04ee81e5bdc04c0e140",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p25-9.jpg": {
+    "mtime": 1795351127.1202085,
+    "seen": 1795352242.6036704,
+    "ast_hash": "cf1b9a1f67dee27bbebef658cbf9b522",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p26-0.jpg": {
+    "mtime": 1795351127.2797196,
+    "seen": 1795352242.603672,
+    "ast_hash": "757cfd7bfd724c4b75a6940985d22c12",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p26-1.jpg": {
+    "mtime": 1795351127.2827196,
+    "seen": 1795352242.603674,
+    "ast_hash": "c1ab97280db68d3b0ddad44436554882",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p26-2.jpg": {
+    "mtime": 1795351127.2857196,
+    "seen": 1795352242.6036758,
+    "ast_hash": "9ee98112ef92f904b8947cff65895e0e",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p26-3.jpg": {
+    "mtime": 1795351127.2877197,
+    "seen": 1795352242.6036775,
+    "ast_hash": "a1bc37ce194de0b39b15631de0574064",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p26-4.jpg": {
+    "mtime": 1795351127.2907197,
+    "seen": 1795352242.6036792,
+    "ast_hash": "6e2702c528884b93a7da79922f000e47",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p27-0.jpg": {
+    "mtime": 1795351127.3237197,
+    "seen": 1795352242.6036813,
+    "ast_hash": "54751694e74e04769c87a8228e2a5822",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p27-1.jpg": {
+    "mtime": 1795351127.3277197,
+    "seen": 1795352242.603683,
+    "ast_hash": "1fcbcd89a60015e919f34472253ff0c3",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p27-2.jpg": {
+    "mtime": 1795351127.3302016,
+    "seen": 1795352242.6036847,
+    "ast_hash": "bccb453f0bcafca44b633c0e8aea1d4a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p27-3.jpg": {
+    "mtime": 1795351127.3307197,
+    "seen": 1795352242.6036866,
+    "ast_hash": "b50b94c94f487c7723782ea70fc57b6c",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p28-0.jpg": {
+    "mtime": 1795351128.3447196,
+    "seen": 1795352242.6036885,
+    "ast_hash": "a666312edf7d52cb3758378fe3081003",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-1.jpg": {
+    "mtime": 1795351128.4087198,
+    "seen": 1795352242.6036901,
+    "ast_hash": "4cbbce4649811a03d211eab81a9a88bd",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-2.jpg": {
+    "mtime": 1795351128.4107196,
+    "seen": 1795352242.603692,
+    "ast_hash": "9f1967310bb04fa7d48580a147adc88a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-3.jpg": {
+    "mtime": 1795351128.4127197,
+    "seen": 1795352242.6036937,
+    "ast_hash": "fe9be0638462efc58cc2695dc2d9e274",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-4.jpg": {
+    "mtime": 1795351128.4147198,
+    "seen": 1795352242.6036956,
+    "ast_hash": "c8f699a06702d3621cc1db666f1204e7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-5.jpg": {
+    "mtime": 1795351128.4167197,
+    "seen": 1795352242.603698,
+    "ast_hash": "4048751b72fe930443d9d2dbfe880663",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p29-6.jpg": {
+    "mtime": 1795351128.4187198,
+    "seen": 1795352242.6037,
+    "ast_hash": "f2c511af6aa7ec0242bb977d7cfbc454",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p30-0.jpg": {
+    "mtime": 1795351129.0407197,
+    "seen": 1795352242.603702,
+    "ast_hash": "b82079a4a0db7935b535fd80cdda9379",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p31-0.jpg": {
+    "mtime": 1795351129.0767198,
+    "seen": 1795352242.6037037,
+    "ast_hash": "f8b3e61576002ccb801654869a547e4e",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p31-1.jpg": {
+    "mtime": 1795351129.0877197,
+    "seen": 1795352242.6037056,
+    "ast_hash": "9a00db63a06cd68e1f6680a33bec5d96",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p32-0.jpg": {
+    "mtime": 1795351129.2927198,
+    "seen": 1795352242.6037073,
+    "ast_hash": "a036c6155ea1081beedc3d69da7d996e",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p32-1.jpg": {
+    "mtime": 1795351129.3233612,
+    "seen": 1795352242.6037092,
+    "ast_hash": "3b14d70837b2e1e735add705dcc9c2af",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p32-2.jpg": {
+    "mtime": 1795351129.3247197,
+    "seen": 1795352242.6037107,
+    "ast_hash": "f0d37a42a96c4c9a39ed63a529f57e79",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p32-3.jpg": {
+    "mtime": 1795351129.3377197,
+    "seen": 1795352242.6037126,
+    "ast_hash": "5e866c893ef2b2ae359879ef26cc8cc0",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p33-0.jpg": {
+    "mtime": 1795351129.4667196,
+    "seen": 1795352242.6037142,
+    "ast_hash": "78d5715b743e127b1b08f777afdadfca",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p33-1.jpg": {
+    "mtime": 1795351129.4917197,
+    "seen": 1795352242.6037161,
+    "ast_hash": "14e1e99e32a3c20c9f62168fa3dfc47d",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p33-2.jpg": {
+    "mtime": 1795351129.5167198,
+    "seen": 1795352242.603718,
+    "ast_hash": "c1c511c1fe69a7ccea03088f330614c7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p33-3.jpg": {
+    "mtime": 1795351129.5187197,
+    "seen": 1795352242.60372,
+    "ast_hash": "820e45950c33ab66a06abfd981e5c01f",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p34-0.jpg": {
+    "mtime": 1795351129.6137197,
+    "seen": 1795352242.6037214,
+    "ast_hash": "fc697cf2246e3e4b187798d3b1e0dbcf",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p34-1.jpg": {
+    "mtime": 1795351129.6367197,
+    "seen": 1795352242.6037233,
+    "ast_hash": "d3c65a86ddaebe15a0bd7a4b4f78e535",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-0.jpg": {
+    "mtime": 1795351129.7737198,
+    "seen": 1795352242.6037252,
+    "ast_hash": "84e02260bdd91dcaeefccddf9b6ea09e",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-1.jpg": {
+    "mtime": 1795351129.7757196,
+    "seen": 1795352242.603727,
+    "ast_hash": "4faf8d0831d1760fbc4acf2b73c8484f",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-2.jpg": {
+    "mtime": 1795351129.7787197,
+    "seen": 1795352242.603729,
+    "ast_hash": "7ab939aaadc7204b441e538191012204",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-3.jpg": {
+    "mtime": 1795351129.7824275,
+    "seen": 1795352242.6037307,
+    "ast_hash": "0f7858ca4cd58ffbf589f142228429bf",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-4.jpg": {
+    "mtime": 1795351129.7847197,
+    "seen": 1795352242.603732,
+    "ast_hash": "c86e42255c76dffb57e0921097e6a868",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-5.jpg": {
+    "mtime": 1795351129.7880352,
+    "seen": 1795352242.603734,
+    "ast_hash": "2d34a347beb6442e06a1fc0c40f96ca7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-6.jpg": {
+    "mtime": 1795351129.8141096,
+    "seen": 1795352242.603736,
+    "ast_hash": "64935986d9ef1b0a891448a6122e619d",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p35-7.jpg": {
+    "mtime": 1795351129.8157198,
+    "seen": 1795352242.6037374,
+    "ast_hash": "8c77fc8236761a4091a4052c5e5dcf6f",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-0.jpg": {
+    "mtime": 1795351129.8957198,
+    "seen": 1795352242.6037395,
+    "ast_hash": "f0251897c019fc1533808e77e2b68ef4",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-1.jpg": {
+    "mtime": 1795351129.9067197,
+    "seen": 1795352242.603741,
+    "ast_hash": "0bd397a91d8a88bbef558644c7888d1a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-2.jpg": {
+    "mtime": 1795351129.9104247,
+    "seen": 1795352242.6037428,
+    "ast_hash": "8ef05fb2448215105adca146cc0806f5",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-3.jpg": {
+    "mtime": 1795351129.9177198,
+    "seen": 1795352242.6037447,
+    "ast_hash": "9c5c24e954803190666779e14adedcec",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-4.jpg": {
+    "mtime": 1795351129.927438,
+    "seen": 1795352242.603747,
+    "ast_hash": "878e2718b5552dd3c5ae02005d405648",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-5.jpg": {
+    "mtime": 1795351129.9337196,
+    "seen": 1795352242.6037488,
+    "ast_hash": "54da9e814b825c54fa8756c3ea17c019",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p36-6.jpg": {
+    "mtime": 1795351129.9417198,
+    "seen": 1795352242.6037507,
+    "ast_hash": "583ba8429276a7388e522e6eddfe9afc",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-0.jpg": {
+    "mtime": 1795351130.0347197,
+    "seen": 1795352242.6037524,
+    "ast_hash": "be7e923ecf21275c9b9c9f16632e3b95",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-1.jpg": {
+    "mtime": 1795351130.0377197,
+    "seen": 1795352242.6037545,
+    "ast_hash": "561d1239039512ffa89288b7f5c20c25",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-2.jpg": {
+    "mtime": 1795351130.0407197,
+    "seen": 1795352242.6037562,
+    "ast_hash": "6838b99b1e89b7160f811748bcc41075",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-3.jpg": {
+    "mtime": 1795351130.0454934,
+    "seen": 1795352242.6037579,
+    "ast_hash": "7e3656ee94842a6a7c0da35f45a35c97",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-4.jpg": {
+    "mtime": 1795351130.0487196,
+    "seen": 1795352242.6037598,
+    "ast_hash": "b304b8865547b0308091859dceb1d741",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-5.jpg": {
+    "mtime": 1795351130.0509453,
+    "seen": 1795352242.603762,
+    "ast_hash": "1b1504b3cb5ab780cbb286dcfda82723",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-6.jpg": {
+    "mtime": 1795351130.0537198,
+    "seen": 1795352242.6037638,
+    "ast_hash": "92405b08a38615dd6f24d48a82c734b8",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-7.jpg": {
+    "mtime": 1795351130.0577197,
+    "seen": 1795352242.6037655,
+    "ast_hash": "51f7c2a85a051abac78bde813aeea7d5",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p37-8.jpg": {
+    "mtime": 1795351130.0607197,
+    "seen": 1795352242.6037674,
+    "ast_hash": "4b5e930c66745d639b8882a08e90d733",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p38-0.jpg": {
+    "mtime": 1795351130.3367198,
+    "seen": 1795352242.603769,
+    "ast_hash": "93c9da17c79036ff0ac2556040330946",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p40-0.jpg": {
+    "mtime": 1795351141.11872,
+    "seen": 1795352242.603771,
+    "ast_hash": "5f27a6e11b705a26f8abb081bd680cf7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p40-1.jpg": {
+    "mtime": 1795351141.37072,
+    "seen": 1795352242.6037726,
+    "ast_hash": "d0238b088d609cac9394fc164193a48a",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p40-2.jpg": {
+    "mtime": 1795351141.63172,
+    "seen": 1795352242.6037745,
+    "ast_hash": "13f12d979a0f74dbc78e029289880aa7",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p5-0.jpg": {
+    "mtime": 1795351123.1737196,
+    "seen": 1795352242.603776,
+    "ast_hash": "1f950f0ebc41f8ec88a9778ad1b2e867",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p6-7.jpg": {
+    "mtime": 1795351124.5497196,
+    "seen": 1795352242.603778,
+    "ast_hash": "4f34f57828515dd8697596e922107b62",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p7-0.jpg": {
+    "mtime": 1795351124.5887196,
+    "seen": 1795352242.6037796,
+    "ast_hash": "d32e085519a1f1088eac27f5c158c54e",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p8-0.jpg": {
+    "mtime": 1795351124.8997197,
+    "seen": 1795352242.6037817,
+    "ast_hash": "1faf62bd54b6c352ffd9232293b5de07",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-0.jpg": {
+    "mtime": 1795351124.9517195,
+    "seen": 1795352242.6037834,
+    "ast_hash": "4e0ce0d748722a6ffcec618e6dfdd6b5",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-1.jpg": {
+    "mtime": 1795351124.9557197,
+    "seen": 1795352242.6037853,
+    "ast_hash": "da16dbf7d40cba0ff0b7ed211c8d5205",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-2.jpg": {
+    "mtime": 1795351124.9587197,
+    "seen": 1795352242.603787,
+    "ast_hash": "e1db3c8b66ed7b6e0224877b7aa144c5",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-3.jpg": {
+    "mtime": 1795351124.9617195,
+    "seen": 1795352242.6037889,
+    "ast_hash": "fba711c56ca555b8728881a358accc98",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-4.jpg": {
+    "mtime": 1795351124.9647195,
+    "seen": 1795352242.6037905,
+    "ast_hash": "abb7d4d7519854b55eaa85c0b4207bfa",
+    "semantic_hash": ""
+  },
+  "backend/data/images/Brochure-EMSI-p9-5.jpg": {
+    "mtime": 1795351124.9697196,
+    "seen": 1795352242.603793,
+    "ast_hash": "84d4580dfb1d61c51fa695ed725c7c5c",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_agent.py": {
+    "mtime": 1795352129.8267434,
+    "seen": 1795352242.6034153,
+    "ast_hash": "572d77eb17bbd4aa0994097c187c7597",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_api.py": {
+    "mtime": 1795352123.0667434,
+    "seen": 1795352242.6034203,
+    "ast_hash": "e143f85990aef680cbc1152fd4f0f8f3",
+    "semantic_hash": ""
+  },
+  "backend/app/errors.py": {
+    "mtime": 1795352065.599742,
+    "seen": 1795352242.6033864,
+    "ast_hash": "39c0fdc049500bbfd8c12bbb7e7c842b",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_vlm.py": {
+    "mtime": 1795352143.2717438,
+    "seen": 1795352242.603435,
+    "ast_hash": "3dbef08acecf1ef4ecb1fcdf0f5d9f00",
+    "semantic_hash": ""
+  }
+}

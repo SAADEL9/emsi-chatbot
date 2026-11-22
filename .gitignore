@@ -4,6 +4,7 @@ cat > .gitignore << 'EOF'
 __pycache__/
 *.pyc
 .env
+mobile/supabase.json
 
 # Vector DB data
 qdrant_data/
@@ -23,3 +24,4 @@ mobile/.pub-cache/
 .vscode/
 .DS_Store
 EOF
+backend/data/*
