@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../services/api_service.dart';
 import '../services/auth_service.dart';
+import 'profile_screen.dart';
 import '../theme.dart';
 import '../widgets/app_background.dart';
 import '../widgets/brand_header.dart';
@@ -145,42 +146,8 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Future<void> _openSettings() async {
-    await showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: Colors.white,
-      showDragHandle: true,
-      builder: (ctx) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                _session.email,
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              const SizedBox(height: 4),
-              const Text(
-                'Connecté avec Supabase',
-                style: TextStyle(color: EmsiColors.muted),
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton.icon(
-                  onPressed: () {
-                    Navigator.pop(ctx);
-                    _signOut();
-                  },
-                  icon: const Icon(Icons.logout),
-                  label: const Text('Se déconnecter'),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+    await Navigator.of(context).push<void>(
+      MaterialPageRoute(builder: (_) => ProfileScreen(auth: widget.auth)),
     );
   }
 
@@ -286,7 +253,7 @@ class _DrawerProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final email = session.email.trim();
-    final initial = email.isEmpty ? '?' : email[0].toUpperCase();
+    final name = session.displayName;
     return Container(
       padding: const EdgeInsets.fromLTRB(22, 30, 22, 24),
       decoration: const BoxDecoration(
@@ -303,19 +270,26 @@ class _DrawerProfileHeader extends StatelessWidget {
           CircleAvatar(
             radius: 30,
             backgroundColor: Colors.white,
-            child: Text(
-              initial,
-              style: const TextStyle(
-                color: EmsiColors.navy,
-                fontSize: 24,
-                fontWeight: FontWeight.w800,
+            child: ClipOval(
+              child: Image.asset(
+                'assets/emsi-robot-mascot.jpg',
+                width: 60,
+                height: 60,
+                fit: BoxFit.cover,
+                errorBuilder: (_, _, _) => const Icon(
+                  Icons.smart_toy_outlined,
+                  color: EmsiColors.navy,
+                  size: 32,
+                ),
               ),
             ),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'EMSI Chatbot',
-            style: TextStyle(
+          Text(
+            name.isEmpty ? 'Mon profil' : name,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w800,
               fontSize: 18,

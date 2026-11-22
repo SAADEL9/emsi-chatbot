@@ -8,11 +8,20 @@ class SessionInfo {
     required this.id,
     required this.email,
     required this.accessToken,
+    this.firstName = '',
+    this.lastName = '',
   });
 
   final String id;
   final String email;
   final String accessToken;
+  final String? firstName;
+  final String? lastName;
+
+  String get displayName => [
+    firstName ?? '',
+    lastName ?? '',
+  ].where((part) => part.trim().isNotEmpty).join(' ');
 }
 
 class AuthController extends ChangeNotifier {
@@ -58,8 +67,24 @@ class AuthController extends ChangeNotifier {
             id: user.id,
             email: user.email ?? '',
             accessToken: next!.accessToken,
+            firstName: user.userMetadata?['first_name']?.toString() ?? '',
+            lastName: user.userMetadata?['last_name']?.toString() ?? '',
           );
     notifyListeners();
+  }
+
+  Future<void> updateProfile({
+    required String firstName,
+    required String lastName,
+  }) async {
+    _ensureConfigured();
+    await Supabase.instance.client.auth.updateUser(
+      UserAttributes(
+        data: {'first_name': firstName.trim(), 'last_name': lastName.trim()},
+      ),
+    );
+    final current = Supabase.instance.client.auth.currentSession;
+    if (current != null) _sync(current);
   }
 
   Future<String?> signIn(String email, String password) async {
